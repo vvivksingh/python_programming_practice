@@ -23,3 +23,13 @@ def swap_list(list2):
 
 list2 = [1, 2, 3, 4, 5, 6]
 print(swap_list(list2))
+
+
+def swap_list(list3):
+    start, *middle, end = list3
+    list3 = end, *middle, start
+    return list3
+
+
+list3 = [2, 21, 13, 41, 15, 66]
+print(swap_list(list3))
